@@ -1,0 +1,17 @@
+[user]
+	email = felix.friedrich@deliveryhero.com
+	name = Felix Friedrich
+	signingkey = 74784680FE9CA7AB
+[alias]
+	s = status
+	b = branch
+	c = diff --cached
+	co = checkout
+	rebaster = !git fetch && git rebase origin/master
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[commit]
+	gpgsign = true
+[pager]
+	branch = false
+	# diff = false
