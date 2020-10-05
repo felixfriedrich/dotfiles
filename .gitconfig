@@ -10,6 +10,7 @@
 	rebaster = !git fetch && git rebase origin/master
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	cb = "!git fetch --quiet; git checkout master --quiet; for BRANCH in $(git branch --format '%(refname:short)' | grep -v master); do git branch --quiet -d $BRANCH; done"  # clean branches
 [commit]
 	gpgsign = true
 [pager]
