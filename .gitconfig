@@ -10,6 +10,7 @@
 	rebaster = !git fetch && git rebase origin/master
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	swap = "!GIT_SEQUENCE_EDITOR=\"sed -i -n 'h;1n;2p;g;p'\" git rebase -i HEAD~2"
 	cb = "!git fetch --quiet; git checkout master --quiet; for BRANCH in $(git branch --format '%(refname:short)' | grep -v master); do git branch --quiet -d $BRANCH; done"  # clean branches
 [commit]
 	gpgsign = true
