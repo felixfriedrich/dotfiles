@@ -1,2 +1,3 @@
 --ignore-dir=.terraform
 --ignore-file=ext:tfstate
+--ignore-file=ext:log
