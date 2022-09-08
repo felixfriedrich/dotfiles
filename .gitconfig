@@ -16,6 +16,7 @@
 	uncommit = reset --soft HEAD~1
 	m = "!git status --untracked-files=no . | grep modified | cut -d ' ' -f 4"
 	p = pull -r
+	ca = commit --amend
 [commit]
 	gpgsign = true
 [pager]
