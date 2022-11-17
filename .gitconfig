@@ -18,6 +18,8 @@
 	pm = "!git checkout master && git pull && git checkout -"
 	p = pull -r
 	ca = commit --amend
+	openchanged = "!code $(git diff --name-only master)"
+	changed = "!git diff --name-only master"
 [commit]
 	gpgsign = true
 [pager]
