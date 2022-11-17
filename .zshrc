@@ -27,3 +27,9 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # https://github.com/cunymatthieu/tgenv
 export PATH="$HOME/.tgenv/bin:$PATH"
 export TGENV_AUTO_INSTALL=true
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
