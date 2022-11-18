@@ -20,6 +20,7 @@
 	ca = commit --amend
 	openchanged = "!code $(git diff --name-only master)"
 	changed = "!git diff --name-only master"
+	cob = "!git co -b $(uuidgen)"
 [commit]
 	gpgsign = true
 [pager]
