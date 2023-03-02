@@ -7,6 +7,8 @@
 * `brew install rbenv pyenv direnv ack`
 * [oh-my-zsh](https://ohmyz.sh/#install): `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
+* For `gpg` on MacOS: `brew install gpg2 pinentry-mac`.
+
 ## Setup
 
 ```
