@@ -8,7 +8,7 @@
 	c = diff --cached
 	co = checkout
 	rebaster = !git fetch && git rebase origin/master
-	pr = "! $(git push 2>&1 | ack "git push" | xargs)"
+	pr = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) 2>&1 | ack 'pull/new' | awk '{print $2}' | xargs open -u"
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	swap = "!GIT_SEQUENCE_EDITOR=\"sed -i -n 'h;1n;2p;g;p'\" git rebase -i HEAD~2"
