@@ -30,3 +30,5 @@
 	# diff = false
 [merge]
 	ff = only
+[diff "sopsdiffer"]
+	textconv = sops --decrypt
