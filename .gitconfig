@@ -1,7 +1,9 @@
 [user]
 	email = felix.friedrich@deliveryhero.com
 	name = Felix Friedrich
-	signingkey = 74784680FE9CA7AB
+	signingkey = 757E7593B808090E
+[core]
+	excludesFile = ~/.gitignore_global
 [alias]
 	s = status
 	b = branch
