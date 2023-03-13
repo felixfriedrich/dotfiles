@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 # Misc
 export EDITOR=vim
 alias l='ls -alh'
+export GPG_TTY=$(tty)
 
 # PATH
 export PATH=~/bin:$PATH
