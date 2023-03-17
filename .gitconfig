@@ -5,7 +5,7 @@
 [core]
 	excludesFile = ~/.gitignore_global
 [alias]
-	s = status
+	s = status -s # -s, --short  show status concisely
 	b = branch
 	c = diff --cached
 	co = checkout
