@@ -12,6 +12,7 @@
 	rebaster = !git fetch && git rebase origin/master
 	pb = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)" # push branch
 	pr = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) 2>&1 | ack 'pull/new' | awk '{print $2}' | xargs open -u"
+	l = log --pretty=oneline
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	swap = "!GIT_SEQUENCE_EDITOR=\"sed -i -n 'h;1n;2p;g;p'\" git rebase -i HEAD~2"
