@@ -9,6 +9,8 @@ plugins=(git kubectl helm)
 
 source $ZSH/oh-my-zsh.sh
 
+# kubectl auto completion
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
 # Misc
 export EDITOR=vim
