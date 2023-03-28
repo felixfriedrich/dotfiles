@@ -20,6 +20,7 @@ alias docker='podman'
 
 # PATH
 export PATH=~/bin:$PATH
+export PATH=~/go/bin:$PATH
 
 # Direnv
 eval "$(direnv hook zsh)"
