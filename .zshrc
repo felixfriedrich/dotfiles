@@ -15,7 +15,8 @@ source $ZSH/oh-my-zsh.sh
 # Misc
 export EDITOR=vim
 alias l='ls -alh'
-export GPG_TTY=$(tty)
+alias k='kubectl'
+alias docker='podman'
 
 # PATH
 export PATH=~/bin:$PATH
