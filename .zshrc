@@ -39,6 +39,7 @@ export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 eval "$(rbenv init -)"
 
+# brew tap superbrothers/zsh-kubectl-prompt
 # brew install zsh-kubectl-prompt
 autoload -U colors; colors
 source /opt/homebrew/etc/zsh-kubectl-prompt/kubectl.zsh
