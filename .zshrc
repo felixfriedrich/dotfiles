@@ -25,8 +25,8 @@ export PATH=~/go/bin:$PATH
 # Direnv
 eval "$(direnv hook zsh)"
 
-# .dotfiles (https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b)
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# https://github.com/felixfriedrich/dotfiles
+alias d='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
