@@ -49,3 +49,4 @@ export NVM_DIR="$HOME/.nvm"
 autoload -U colors; colors
 source /opt/homebrew/etc/zsh-kubectl-prompt/kubectl.zsh
 RPROMPT='%{$fg[white]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
+export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
