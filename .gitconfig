@@ -12,6 +12,7 @@
 	c = diff --cached
 	co = checkout
 	rebaster = !git fetch && git rebase origin/master
+	rebain = !git fetch && git rebase origin/main
 	pb = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)" # push branch
 	pr = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) 2>&1 | ack 'pull/new' | awk '{print $2}' | xargs open -u"
 	l = log --pretty=oneline
