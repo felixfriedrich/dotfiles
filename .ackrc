@@ -1,4 +1,5 @@
 --ignore-dir=.terraform
+--ignore-dir=dist
 --ignore-file=ext:tfstate
 --ignore-file=ext:log
 --ignore-dir=.terragrunt-cache
