@@ -29,6 +29,7 @@
 	openchanged = "!code $(git diff --name-only master)"
 	changed = "!git diff --name-only master"
 	cob = "!git co -b $(uuidgen | cut -d '-' -f 1)"
+	todo = "!git diff master --unified=0 | grep TODO"
 [commit]
 	gpgsign = true
 [pager]
