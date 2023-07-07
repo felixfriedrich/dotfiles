@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 alias l='ls -alh'
 alias k='kubectl'
-alias docker='podman'
+#alias docker='podman'
 
 # PATH
 export PATH=~/bin:$PATH
