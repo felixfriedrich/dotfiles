@@ -23,6 +23,7 @@
 	m = "!git status --untracked-files=no . | grep modified | cut -d ' ' -f 4"
 	pm = "!git checkout master && git pull && git checkout -"
 	p = pull -r
+	sp = "! git stash && git pull && git stash pop" # stash pull
 	ca = commit --amend
 	openchanged = "!code $(git diff --name-only $(git branch -l master main | xargs))"
 	changed = "!git diff --name-only $(git branch -l master main | xargs)"
