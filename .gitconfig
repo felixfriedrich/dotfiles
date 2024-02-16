@@ -9,6 +9,7 @@
 	b = branch
 	c = diff --cached
 	co = checkout
+	com = "! [ $(git rev-parse --abbrev-ref HEAD) != '$(git branch -l master main | xargs)' ] && git checkout $(git branch -l master main | xargs)"
 	rebaster = "! git fetch && git rebase origin/$(git branch -l master main | xargs)"
 	pb = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)" # push branch
 	pr = "! git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) 2>&1 | ack 'pull/new' | awk '{print $2}' | xargs open -u"
