@@ -1,7 +1,7 @@
 [user]
 	email = felix.friedrich@on.com
 	name = Felix Friedrich
-	signingkey = 757E7593B808090E
+	signingkey = /Users/felix.friedrich/.ssh/id_rsa.pub
 [core]
 	excludesFile = ~/.gitignore_global
 [alias]
@@ -43,3 +43,11 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[gpg]
+	format = ssh
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
