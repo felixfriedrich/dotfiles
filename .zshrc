@@ -17,6 +17,7 @@ export EDITOR=vim
 alias l='ls -alh'
 alias k='kubectl'
 #alias docker='podman'
+alias rmgitignore='cat .gitignore | ack -v '#' | ack "\S" | xargs -I {} rm -rf {}'
 
 # PATH
 export PATH=~/bin:$PATH
